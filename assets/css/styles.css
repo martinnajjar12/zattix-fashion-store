@@ -1,0 +1,64 @@
+:root {
+  --red: #d35266;
+  --grey: #888;
+  --dark: #383838;
+}
+
+body {
+  background-color: #f9f9f9;
+}
+
+p {
+  margin-block-end: 0;
+}
+
+.width-30px {
+  width: 30px;
+}
+
+.f-size-12px {
+  font-size: 12px;
+}
+
+.navbar {
+  background-color: var(--dark);
+}
+
+.nav-sm-container {
+  width: 100%;
+}
+
+.nav a {
+  color: #fff;
+}
+
+.nav-link {
+  padding: 0.5rem;
+}
+
+.nav-link.active {
+  background-color: unset;
+  border: none;
+  color: var(--red);
+}
+
+.nav button {
+  background-color: var(--red);
+}
+
+.fa-envelope {
+  color: var(--grey);
+}
+
+/* ----------------------- JUMBOTRON SECTION ------------------------- */
+
+.jumbotron {
+  padding: 0.6rem 1rem;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-sm-container {
+    width: 100%;
+  }
+}
