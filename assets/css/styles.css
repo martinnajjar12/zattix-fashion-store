@@ -12,6 +12,10 @@ p {
   margin-block-end: 0;
 }
 
+.brands-logo {
+  width: 35px;
+}
+
 .width-30px {
   width: 30px;
 }
@@ -50,11 +54,29 @@ p {
   color: var(--grey);
 }
 
+.btn:focus {
+  box-shadow: none;
+}
+
 /* ----------------------- JUMBOTRON SECTION ------------------------- */
 
 .jumbotron {
   padding: 0.6rem 1rem;
   margin-bottom: 0;
+  background-color: unset;
+}
+
+/* ---------------- SPACER DIV -------------------------- */
+
+.spacer-title {
+  font-size: 14px;
+  margin-block-end: 0;
+}
+
+/* ------------------------ CARDS ----------------------- */
+
+.color-red {
+  color: #fa2c2c;
 }
 
 @media screen and (min-width: 1024px) {
