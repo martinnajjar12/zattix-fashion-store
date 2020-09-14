@@ -12,6 +12,16 @@ p {
   margin-block-end: 0;
 }
 
+li {
+  list-style: none;
+}
+
+.main-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
 .brands-logo {
   width: 35px;
 }
@@ -32,7 +42,7 @@ p {
   width: 100%;
 }
 
-.nav a {
+.top-nav-a {
   color: #fff;
 }
 
@@ -63,7 +73,19 @@ p {
 .jumbotron {
   padding: 0.6rem 1rem;
   margin-bottom: 0;
-  background-color: unset;
+  background-color: var(--red);
+}
+
+.jumbotron-paragraph {
+  font-size: 20px;
+}
+
+.jumbotron input {
+  border: 2px solid var(--red);
+}
+
+.jumbotron input:last-child {
+  border-radius: 0 2px 2px 0;
 }
 
 /* ---------------- SPACER DIV -------------------------- */
@@ -107,6 +129,51 @@ p {
   color: #fa2c2c;
 }
 
+/* --------------------------- FOOTER ----------------------- */
+
+.footer-title {
+  color: var(--grey);
+}
+
+.footer-paragraph {
+  color: var(--grey);
+}
+
+.bottom-nav-a {
+  color: var(--grey);
+  font-size: 14px;
+}
+
+.bottom-nav-a:hover {
+  color: var(--dark);
+}
+
+.bottom-navigation-title {
+  color: var(--red);
+  border-bottom: 4px solid var(--red);
+  width: fit-content;
+  font-size: 1rem;
+}
+
+.properties h3 {
+  color: var(--red);
+  width: fit-content;
+  font-size: 1rem;
+}
+
+.copyright-div ul {
+  padding-inline-start: 0;
+}
+
+.copyright-div a {
+  color: var(--grey);
+  text-decoration: underline;
+}
+
+.copyright-div p {
+  color: var(--grey);
+}
+
 @media (min-width: 768px) {
   .carousel-inner .carousel-item-right.active,
   .carousel-inner .carousel-item-next {
@@ -116,6 +183,28 @@ p {
   .carousel-inner .carousel-item-left.active,
   .carousel-inner .carousel-item-prev {
     transform: translateX(-25%);
+  }
+
+  .bottom-navigation-title {
+    font-size: 1.2rem;
+  }
+
+  .properties h3 {
+    font-size: 1.2rem;
+  }
+
+  .jumbotron button {
+    border: 2px solid var(--red);
+    border-radius: 2px 0 0 2px;
+    color: #fff;
+  }
+
+  .jumbotron button:hover {
+    color: #fff;
+  }
+
+  .social-media-icons ul {
+    width: 200px;
   }
 }
 
