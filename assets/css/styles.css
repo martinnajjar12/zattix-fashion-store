@@ -91,6 +91,12 @@ p {
   display: flex;
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100%;
+  border-radius: 2px;
+}
+
 /* ------------------------ CARDS ----------------------- */
 
 .color-red {
