@@ -35,14 +35,14 @@ prevBtn.addEventListener("click", moveBackward);
 
 function moveForward() {
   if (counter >= carouselDivs.length - 1) return;
-  carouselSlide.style.transition = "transform 0.4s";
+  carouselSlide.style.transition = "transform 1s";
   counter++;
   carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
 }
 
 function moveBackward() {
   if (counter <= 0) return;
-  carouselSlide.style.transition = "transform 0.4s";
+  carouselSlide.style.transition = "transform 1s";
   counter--;
   carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
 }

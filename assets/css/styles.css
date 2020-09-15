@@ -88,7 +88,22 @@ li {
   border-radius: 0 2px 2px 0;
 }
 
+.jumbotron-btn {
+  background-color: var(--dark);
+  color: var(--grey);
+  border-radius: 0;
+}
+
+.jumbotron-btn:hover {
+  color: #fff;
+}
+
 /* ------------------------- ADVERTISEMENT SECTION ------------------------- */
+
+.ad-title {
+  color: var(--grey);
+  font-size: 20px;
+}
 
 .carousel-container {
   width: 100%;
@@ -122,22 +137,29 @@ li {
   background-color: #e77486;
 }
 
-.left-btn {
+.ad-carousel-btn {
+  background-color: transparent;
+  color: var(--red);
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  z-index: 4;
+  transition: 0.4s;
+}
+
+.ad-carousel-btn:hover {
+  background-color: var(--red);
+  color: #fff;
+}
+
+.left-btn {
   top: 50%;
   left: -4vw;
-  z-index: 3;
 }
 
 .right-btn {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
   top: 50%;
   right: -4vw;
-  z-index: 4;
 }
 
 /* ---------------- SPACER DIV -------------------------- */

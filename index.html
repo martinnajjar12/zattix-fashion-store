@@ -79,7 +79,7 @@
       <!-- JUMBOTRON -->
 
       <section
-        class="jumbotron jumbotron-fluid border-bottom pb-5"
+        class="jumbotron jumbotron-fluid border-bottom pb-2 pb-md-5"
         aria-label="search"
       >
         <div>
@@ -140,12 +140,18 @@
             placeholder="Where are you?"
             class="d-none d-md-block p-2"
           />
+          <a
+            href="/seachResults.html"
+            class="btn jumbotron-btn ml-2 d-none d-md-block"
+            >Search</a
+          >
         </div>
       </section>
 
       <!-- ADVERTISEMENTS -->
 
       <section class="container d-none d-md-block position-relative">
+        <h3 class="ad-title my-3">HOT ADS</h3>
         <div class="carousel-container">
           <div class="carousel-slide w-100 d-flex">
             <div class="w-100 col-md-12" id="lastClone">
@@ -276,18 +282,18 @@
           </div>
         </div>
         <button
-          class="btn ad-btn left-btn position-absolute"
+          class="btn ad-carousel-btn left-btn position-absolute border"
           type="button"
           id="prevBtn"
         >
-          <i class="fas fa-angle-left text-white"></i>
+          <i class="fas fa-angle-left"></i>
         </button>
         <button
-          class="btn ad-btn right-btn position-absolute"
+          class="btn ad-carousel-btn right-btn position-absolute border"
           type="button"
           id="nextBtn"
         >
-          <i class="fas fa-angle-right text-white"></i>
+          <i class="fas fa-angle-right"></i>
         </button>
       </section>
 
