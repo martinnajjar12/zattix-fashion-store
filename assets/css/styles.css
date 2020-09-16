@@ -51,6 +51,10 @@ li {
   color: var(--red);
 }
 
+.nav-item button {
+  background-color: var(--red);
+}
+
 .nav-link {
   padding: 0.5rem;
 }
@@ -59,10 +63,6 @@ li {
   background-color: unset;
   border: none;
   color: var(--red);
-}
-
-.nav button {
-  background-color: var(--red);
 }
 
 .fa-envelope {
@@ -116,7 +116,7 @@ li {
 }
 
 .ad-img-div {
-  width: 520px;
+  width: 50vw;
   height: 290px;
   background-size: cover;
   background-position: center;
