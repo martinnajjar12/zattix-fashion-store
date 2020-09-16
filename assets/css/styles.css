@@ -93,6 +93,10 @@ li {
   border-radius: 0 2px 2px 0;
 }
 
+.jumbotron .xs-input {
+  border-radius: 0.25rem;
+}
+
 .jumbotron-btn {
   background-color: var(--dark);
   color: var(--grey);
@@ -280,6 +284,10 @@ li {
 
   .jumbotron button:hover {
     color: #fff;
+  }
+
+  .jumbotron .xs-input {
+    border-radius: 0;
   }
 
   .social-media-icons ul {
