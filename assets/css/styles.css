@@ -46,6 +46,10 @@ li {
   color: #fff;
 }
 
+.top-nav-a:hover {
+  color: var(--red);
+}
+
 .nav-link {
   padding: 0.5rem;
 }
