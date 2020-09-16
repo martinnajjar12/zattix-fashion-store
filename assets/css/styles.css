@@ -1,0 +1,307 @@
+:root {
+  --red: #d35266;
+  --grey: #888;
+  --dark: #383838;
+}
+
+body {
+  background-color: #f9f9f9;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+p {
+  margin-block-end: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.main-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.brands-logo {
+  width: 35px;
+}
+
+.width-30px {
+  width: 30px;
+}
+
+.f-size-12px {
+  font-size: 12px;
+}
+
+.navbar {
+  background-color: var(--dark);
+}
+
+.nav-sm-container {
+  width: 100%;
+}
+
+.top-nav-a {
+  color: #fff;
+}
+
+.top-nav-a:hover {
+  color: var(--red);
+}
+
+.nav-item button {
+  background-color: var(--red);
+}
+
+.nav-link {
+  padding: 0.5rem;
+}
+
+.nav-link.active {
+  background-color: unset;
+  border: none;
+  color: var(--red);
+}
+
+.fa-envelope {
+  color: var(--grey);
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+/* ----------------------- JUMBOTRON SECTION ------------------------- */
+
+.jumbotron {
+  padding: 0.6rem 1rem;
+  margin-bottom: 0;
+  background-color: var(--red);
+}
+
+.jumbotron-paragraph {
+  font-size: 20px;
+}
+
+.jumbotron input {
+  border: 2px solid var(--red);
+}
+
+.jumbotron input:last-child {
+  border-radius: 0 2px 2px 0;
+}
+
+.jumbotron .xs-input {
+  border-radius: 0.25rem;
+}
+
+.jumbotron-btn {
+  background-color: var(--dark);
+  color: var(--grey);
+  border-radius: 0;
+}
+
+.jumbotron-btn:hover {
+  color: #fff;
+}
+
+/* ------------------------- ADVERTISEMENT SECTION ------------------------- */
+
+.ad-title {
+  color: var(--grey);
+  font-size: 20px;
+}
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.ad-img-div {
+  width: 50vw;
+  height: 290px;
+  background-size: cover;
+  background-position: center;
+}
+
+.ad-img-div1 {
+  background-image: url(../media/ads/iphone-watch.jpg);
+}
+
+.ad-img-div2 {
+  background-image: url(../media/ads/macbook.jpg);
+}
+
+.ad-img-div3 {
+  background-image: url(../media/ads/mobile.jpg);
+}
+
+.ad-btn {
+  background-color: var(--red);
+}
+
+.ad-btn:hover {
+  background-color: #e77486;
+}
+
+.ad-carousel-btn {
+  background-color: transparent;
+  color: var(--red);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 4;
+  transition: 0.4s;
+}
+
+.ad-carousel-btn:hover {
+  background-color: var(--red);
+  color: #fff;
+}
+
+.left-btn {
+  top: 50%;
+  left: -4vw;
+}
+
+.right-btn {
+  top: 50%;
+  right: -4vw;
+}
+
+/* ---------------- SPACER DIV -------------------------- */
+
+.spacer-title {
+  font-size: 14px;
+  margin-block-end: 0;
+}
+
+/* ----------------------- MULTI-ITEMS CAROUSEL --------------------- */
+
+.carousel-inner .carousel-item-right.active,
+.carousel-inner .carousel-item-next {
+  transform: translateX(50%);
+}
+
+.carousel-inner .carousel-item-left.active,
+.carousel-inner .carousel-item-prev {
+  transform: translateX(-50%);
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+.carousel-control-prev-icon {
+  height: 100%;
+  border-radius: 2px;
+}
+
+.carousel-control-next-icon {
+  height: 100%;
+  border-radius: 2px;
+}
+
+/* ------------------------ CARDS ----------------------- */
+
+.color-red {
+  color: #fa2c2c;
+}
+
+/* --------------------------- FOOTER ----------------------- */
+
+.footer-title {
+  color: var(--grey);
+}
+
+.footer-paragraph {
+  color: var(--grey);
+}
+
+.bottom-nav-a {
+  color: var(--grey);
+  font-size: 14px;
+}
+
+.bottom-nav-a:hover {
+  color: var(--dark);
+}
+
+.bottom-navigation-title {
+  color: var(--red);
+  border-bottom: 4px solid var(--red);
+  width: fit-content;
+  font-size: 1rem;
+}
+
+.properties h3 {
+  color: var(--red);
+  width: fit-content;
+  font-size: 1rem;
+}
+
+.copyright-div ul {
+  padding-inline-start: 0;
+}
+
+.copyright-div a {
+  color: var(--grey);
+  text-decoration: underline;
+}
+
+.copyright-div p {
+  color: var(--grey);
+}
+
+@media (min-width: 768px) {
+  .carousel-inner .carousel-item-right.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+
+  .carousel-inner .carousel-item-left.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+
+  .bottom-navigation-title {
+    font-size: 1.2rem;
+  }
+
+  .properties h3 {
+    font-size: 1.2rem;
+  }
+
+  .jumbotron button {
+    border: 2px solid var(--red);
+    border-radius: 2px 0 0 2px;
+    color: #fff;
+  }
+
+  .jumbotron button:hover {
+    color: #fff;
+  }
+
+  .jumbotron .xs-input {
+    border-radius: 0;
+  }
+
+  .social-media-icons ul {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-sm-container {
+    width: 100%;
+  }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left {
+  transform: translateX(0);
+}

@@ -1,0 +1,72 @@
+:root {
+  --red: #d35266;
+  --grey: #888;
+  --dark: #383838;
+}
+
+.search-results {
+  color: var(--grey);
+}
+
+.left-titles {
+  font-size: 16px;
+}
+
+.row {
+  margin: 0;
+}
+
+.container-fluid {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.first-div {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.search-text {
+  color: var(--grey);
+}
+
+.search-img-div {
+  width: 300px;
+  height: 250px;
+  background-size: cover;
+  background-position: top;
+}
+
+.search-img-div-1 {
+  background-image: url(../media/Armani/1.jpg);
+}
+
+.search-img-div-2 {
+  background-image: url(../media/Armani/2.jpg);
+}
+
+.search-img-div-3 {
+  background-image: url(../media/Armani/3.jpg);
+}
+
+.search-img-div-4 {
+  background-image: url(../media/Armani/4.jpg);
+}
+
+.search-img-div-5 {
+  background-image: url(../media/Armani/5.webp);
+}
+
+.search-img-div-6 {
+  background-image: url(../media/Armani/6.jpg);
+}
+
+@media screen and (min-width: 768px) {
+  .first-div {
+    border: none;
+  }
+
+  .second-div {
+    border-right: 1px solid #dee2e6;
+    border-left: 1px solid #dee2e6;
+  }
+}

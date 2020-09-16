@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="../assets/media/zattix-icon.ico" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/searchPage.css" />
+    <title>Zattix | Fashion Online Store</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+
+    <header class="main-header">
+      <nav class="navbar navbar-expand-md py-0 py-md-2">
+        <div class="nav-sm-container container px-0 px-md-2">
+          <a
+            class="navbar-brand f-size-12px text-white mx-md-2"
+            href="../index.html"
+            ><img
+              src="../assets/media/red-logo.png"
+              alt="zattix logo"
+              class="zattix-logo width-30px mr-2"
+            />ZATTIX</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars text-white"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav mr-auto">
+              <li class="nav-item active">
+                <a
+                  class="nav-link top-nav-a f-size-12px active mx-md-2"
+                  href="#"
+                  data-toggle="tab"
+                  ><i class="fas fa-home"></i> HOME</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link top-nav-a f-size-12px mx-md-2"
+                  href="#"
+                  data-toggle="tab"
+                  ><i class="fas fa-th-large"></i> COLLECTIONS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link top-nav-a f-size-12px mx-md-2"
+                  href="#"
+                  data-toggle="tab"
+                  ><i class="fas fa-shopping-cart"></i> PURCHASE LIST</a
+                >
+              </li>
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="btn btn-sm d-none d-md-inline-block text-white mx-md-2 f-size-12px"
+                >
+                  POST AN AD
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="d-none d-lg-block">
+            <i class="fas fa-envelope mr-2"></i>
+            <a href="#" class="f-size-12px text-white mr-2">Martin Najjar</a>
+            <div class="profile-pic-container d-inline-block mr-2">
+              <img
+                class="rounded-circle width-30px"
+                src="../assets/media/pro-pic.jpg"
+                alt="Martin Najjar"
+              />
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+
+    <main>
+      <!-- JUMBOTRON -->
+
+      <section
+        class="jumbotron jumbotron-fluid border-bottom pb-2 pb-md-5"
+        aria-label="search"
+      >
+        <div>
+          <h1 class="d-none d-md-block display-1 text-center text-white">
+            ZATTIX
+          </h1>
+          <p
+            class="jumbotron-paragraph d-none d-md-block text-center text-white"
+          >
+            Explore the most famous T-Shirts' brands.
+          </p>
+        </div>
+        <div class="container justify-content-center d-flex mt-3">
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn dropdown-toggle dropdown-toggle-split py-0 mr-2 mr-md-0"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <!-- <p class="d-md-none">
+              Buying and selling couldn't be easier than this!
+            </p> -->
+            <input
+              type="search"
+              placeholder="All Departments"
+              class="d-none d-md-block p-2"
+            />
+            <div class="dropdown-menu">
+              <a class="dropdown-item text-uppercase" href="#armani"
+                >Emporio Armani</a
+              >
+              <a class="dropdown-item text-uppercase" href="#klein"
+                >Calvin Klein</a
+              >
+              <a class="dropdown-item text-uppercase" href="#gabbana"
+                >Dolce & Gabbana</a
+              >
+              <a class="dropdown-item text-uppercase" href="#vuitton"
+                >Louis Vuitton</a
+              >
+              <a class="dropdown-item text-uppercase" href="#levis">Levi's</a>
+              <a class="dropdown-item text-uppercase" href="#lauren"
+                >Ralph Lauren</a
+              >
+            </div>
+          </div>
+          <input
+            type="search"
+            placeholder="What do you search for?"
+            class="xs-input p-2"
+          />
+          <input
+            type="search"
+            placeholder="Where are you?"
+            class="d-none d-md-block p-2"
+          />
+          <a href="./seachResults.html" class="btn jumbotron-btn ml-2 rounded"
+            >Search</a
+          >
+        </div>
+      </section>
+
+      <section class="search-results">
+        <div class="row container-fluid p-md-2">
+          <aside class="first-div col-md-4 d-flex flex-column pl-4 pr-2">
+            <div>
+              <h3 class="left-titles border-bottom py-2">Type</h3>
+              <div class="d-flex flex-md-column justify-content-around">
+                <label><input type="checkbox" /> Casual</label>
+                <label><input type="checkbox" /> Buisness Casual</label>
+                <label><input type="checkbox" /> Formal</label>
+              </div>
+            </div>
+            <div>
+              <h3 class="left-titles border-bottom py-2">Size</h3>
+              <div class="d-flex flex-md-column justify-content-around">
+                <label><input type="checkbox" /> Small</label>
+                <label><input type="checkbox" /> Medium</label>
+                <label><input type="checkbox" /> Large</label>
+              </div>
+            </div>
+            <div>
+              <h3 class="left-titles border-bottom py-2">Price Range</h3>
+              <div class="d-flex flex-md-column justify-content-around">
+                <label><input type="checkbox" /> 10$ - 50$</label>
+                <label><input type="checkbox" /> 50$ - 100$</label>
+                <label><input type="checkbox" /> +100$</label>
+              </div>
+            </div>
+          </aside>
+          <div class="second-div col-md-8 p-2 mt-4 mt-md-0">
+            <div
+              class="search-text d-none d-md-block col-12 font-weight-bold border-bottom"
+            >
+              6 Results for Armani T-Shirts
+            </div>
+
+            <!-- FIRST RESULT -->
+
+            <div class="w-100 row mt-md-3 border-bottom pb-md-2">
+              <div
+                class="search-img-div search-img-div-1 col-12 col-md-5"
+              ></div>
+              <div
+                class="col-12 col-md-7 d-flex align-items-start flex-column justify-content-center"
+              >
+                <div class="w-100 d-flex justify-content-between">
+                  <h3>Emporio Armani</h3>
+                  <div class="btn-group dropleft">
+                    <button
+                      type="button"
+                      class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <i class="fas fa-plus text-secondary border p-2"></i>
+                      <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item text-uppercase" href="#"
+                        >Add to Collection</a
+                      >
+                      <a class="dropdown-item text-uppercase" href="#"
+                        >Send Message</a
+                      >
+                      <a class="dropdown-item text-uppercase" href="#"
+                        >More Details</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  Black and shining golden T-Shirt from Emporio Armani. 50%
+                  Sale. All sizes are available. You can get it no matter where
+                  you are.
+                </p>
+                <p class="mt-3">
+                  <span class="font-weight-bold">Location:</span> Toronto
+                </p>
+                <div
+                  class="btn-container w-100 mt-3 d-flex justify-content-between"
+                >
+                  <p><time datetime="2020-09-15">15 Sep, 2020</time></p>
+                  <a href="#" class="btn ad-btn text-white">$ 90</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- SECOND RESULT -->
+
+            <div class="w-100 row mt-md-3 border-bottom pb-md-2">
+              <div
+                class="search-img-div search-img-div-2 col-12 col-md-5"
+              ></div>
+              <div
+                class="col-12 col-md-7 d-flex align-items-start flex-column justify-content-center"
+              >
+                <div class="w-100 d-flex justify-content-between">
+                  <h3>Emporio Armani</h3>
+                  <div class="btn-group dropleft">
+                    <button
+                      type="button"
+                      class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <i class="fas fa-plus text-secondary border p-2"></i>
+                      <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item text-uppercase" href="#"
+                        >Add to Collection</a
+                      >
+                      <a class="dropdown-item text-uppercase" href="#"
+                        >Send Message</a
+                      >
+                      <a class="dropdown-item text-uppercase" href="#"
+                        >More Details</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  Red, white and black can make your appearance more attractive.
+                  Buy 2 get 1. All sizes are available. This offer is only for 2
+                  days.
+                </p>
+                <p class="mt-3">
+                  <span class="font-weight-bold">Location:</span> Toronto
+                </p>
+                <div
+                  class="btn-container w-100 mt-3 d-flex justify-content-between"
+                >
+                  <p><time datetime="2020-09-15">15 Sep, 2020</time></p>
+                  <a href="#" class="btn ad-btn text-white">$ 85</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- THIRD RESULT -->
+
+            <div class="w-100 row mt-md-3 border-bottom pb-md-2">
+              <div
+                class="search-img-div search-img-div-3 col-12 col-md-5"
+              ></div>
+              <div
+                class="col-12 col-md-7 d-flex align-items-start flex-column justify-content-center"
+              >
+                <div class="w-100 d-flex justify-content-between">
+                  <h3>Emporio Armani</h3>
+                  <div class="btn-group dropleft">
+                    <button
+                      type="button"
+                      class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <i class="fas fa-plus text-secondary border p-2"></i>
+                      <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item text-uppercase" href="#"
+                        >Add to Collection</a
+                      >
+                      <a class="dropdown-item text-uppercase" href="#"
+                        >Send Message</a
+                      >
+                      <a class="dropdown-item text-uppercase" href="#"
+                        >More Details</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  Light grey, Dark blue. The offer is buy 1 get 1. We will
+                  deliver them to you no matter where you are. Small size is out
+                  of stock.
+                </p>
+                <p class="mt-3">
+                  <span class="font-weight-bold">Location:</span> Toronto
+                </p>
+                <div
+                  class="btn-container w-100 mt-3 d-flex justify-content-between"
+                >
+                  <p><time datetime="2020-09-15">15 Sep, 2020</time></p>
+                  <a href="#" class="btn ad-btn text-white">$ 80</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- FOURTH RESULT -->
+
+            <div class="w-100 row mt-md-3 border-bottom pb-md-2">
+              <div
+                class="search-img-div search-img-div-4 col-12 col-md-5"
+              ></div>
+              <div
+                class="col-12 col-md-7 d-flex align-items-start flex-column justify-content-center"
+              >
+                <div class="w-100 d-flex justify-content-between">
+                  <h3>Emporio Armani</h3>
+                  <div class="btn-group dropleft">
+                    <button
+                      type="button"
+                      class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <i class="fas fa-plus text-secondary border p-2"></i>
+                      <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item text-uppercase" href="#"
+                        >Add to Collection</a
+                      >
+                      <a class="dropdown-item text-uppercase" href="#"
+                        >Send Message</a
+                      >
+                      <a class="dropdown-item text-uppercase" href="#"
+                        >More Details</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  Don't miss out this luxury T-Shirt. All sizes are available.
+                  Shipping expenses are on our side.
+                </p>
+                <p class="mt-3">
+                  <span class="font-weight-bold">Location:</span> Toronto
+                </p>
+                <div
+                  class="btn-container w-100 mt-3 d-flex justify-content-between"
+                >
+                  <p><time datetime="2020-09-15">15 Sep, 2020</time></p>
+                  <a href="#" class="btn ad-btn text-white">$ 105</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- FIFTH RESULT -->
+
+            <div class="w-100 row mt-md-3 border-bottom pb-md-2">
+              <div
+                class="search-img-div search-img-div-5 col-12 col-md-5"
+              ></div>
+              <div
+                class="col-12 col-md-7 d-flex align-items-start flex-column justify-content-center"
+              >
+                <div class="w-100 d-flex justify-content-between">
+                  <h3>Emporio Armani</h3>
+                  <div class="btn-group dropleft">
+                    <button
+                      type="button"
+                      class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <i class="fas fa-plus text-secondary border p-2"></i>
+                      <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item text-uppercase" href="#"
+                        >Add to Collection</a
+                      >
+                      <a class="dropdown-item text-uppercase" href="#"
+                        >Send Message</a
+                      >
+                      <a class="dropdown-item text-uppercase" href="#"
+                        >More Details</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  Make the people who see you happy with this whity T-Shirt. A
+                  buiseness casual, yet so comfotable and light. Shipping takes
+                  no more than 3 working days. Don't miss it out.
+                </p>
+                <p class="mt-3">
+                  <span class="font-weight-bold">Location:</span> Toronto
+                </p>
+                <div
+                  class="btn-container w-100 mt-3 d-flex justify-content-between"
+                >
+                  <p><time datetime="2020-09-15">15 Sep, 2020</time></p>
+                  <a href="#" class="btn ad-btn text-white">$ 93</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- SIXTH RESULT -->
+
+            <div class="w-100 row mt-md-3 border-bottom pb-md-2">
+              <div
+                class="search-img-div search-img-div-6 col-12 col-md-5"
+              ></div>
+              <div
+                class="col-12 col-md-7 d-flex align-items-start flex-column justify-content-center"
+              >
+                <div class="w-100 d-flex justify-content-between">
+                  <h3>Emporio Armani</h3>
+                  <div class="btn-group dropleft">
+                    <button
+                      type="button"
+                      class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <i class="fas fa-plus text-secondary border p-2"></i>
+                      <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item text-uppercase" href="#"
+                        >Add to Collection</a
+                      >
+                      <a class="dropdown-item text-uppercase" href="#"
+                        >Send Message</a
+                      >
+                      <a class="dropdown-item text-uppercase" href="#"
+                        >More Details</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  Blue and white can make the eyes of the people feel
+                  comfortable. This T-Shirt is one of the most in-demand
+                  T-Shirts. Don't miss it out.
+                </p>
+                <p class="mt-3">
+                  <span class="font-weight-bold">Location:</span> Toronto
+                </p>
+                <div
+                  class="btn-container w-100 mt-3 d-flex justify-content-between"
+                >
+                  <p><time datetime="2020-09-15">15 Sep, 2020</time></p>
+                  <a href="#" class="btn ad-btn text-white">$ 85</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="m-0 p-0 border-top">
+      <div
+        class="container row row-cols-1 row-cols-md-3 d-flex justify-content-between flex-xs-column flex-md-row pt-3 mx-auto"
+      >
+        <div class="about d-none d-md-block">
+          <a class="footer-title font-weight-bold navbar-brand mx-md-2" href="#"
+            ><img
+              src="../assets/media/grey-logo.png"
+              alt="zattix logo"
+              class="zattix-logo width-30px mr-2"
+            />ZATTIX</a
+          >
+          <p class="footer-paragraph">
+            Zattix is a fashion store website. It has daily sales and offers on
+            the most T-Shirts' brands, plus it will ship you the product no
+            matter where you live.
+          </p>
+        </div>
+        <nav
+          class="nav footer-nav flex-xs-row flex-md-column justify-content-md-center align-items-md-center"
+        >
+          <h3 class="bottom-navigation-title py-2 pr-3">Navigation</h3>
+          <div
+            class="bottom-nav-links d-flex flex-xs-row flex-md-column justify-content-between flex-wrap"
+          >
+            <a class="nav-link bottom-nav-a" href="#">Home</a>
+            <a class="nav-link bottom-nav-a" href="#">Sign In</a>
+            <a class="nav-link bottom-nav-a" href="#">Sign Up</a>
+            <a class="nav-link bottom-nav-a" href="#">Terms & Conditions</a>
+            <a class="nav-link bottom-nav-a" href="#">FAQ</a>
+            <a class="nav-link bottom-nav-a" href="#">Help</a>
+          </div>
+        </nav>
+        <div class="properties d-flex flex-md-column flex-wrap align-items-end">
+          <div class="country-div mt-3 mr-3">
+            <h3 class="text-uppercase d-inline-block mr-2">Country</h3>
+            <button type="button" class="btn border">Iraq</button>
+          </div>
+          <div class="language-div mt-3 mr-3">
+            <h3 class="text-uppercase d-inline-block mr-2">Language</h3>
+            <button type="button" class="btn border mr-2">English</button>
+          </div>
+          <div class="currency-div mt-3 mr-3">
+            <h3 class="text-uppercase d-inline-block">Currency</h3>
+            <button type="button" class="btn border">US Dollar</button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="copyright-div container d-flex flex-column flex-md-row-reverse justify-content-between border-top mt-3 pt-3 p-md-3"
+      >
+        <div class="social-media-icons">
+          <ul class="d-flex justify-content-around">
+            <li>
+              <a href="#" class="social-media-links"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="social-media-links"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="social-media-links"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <p class="text-center f-size-12px">
+          &copy; 2020 All Rights Reserved. Designed by
+          <a
+            href="https://www.behance.net/gallery/24796463/ZATTIX"
+            target="_blank"
+            rel="noopener"
+            >Mohammed Awad</a
+          >. Implemented by
+          <a
+            href="https://www.linkedin.com/in/martinnajjar12/"
+            target="_blank"
+            rel="noopener"
+            >Martin Najjar</a
+          >
+        </p>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

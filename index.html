@@ -1,0 +1,2589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="./assets/media/zattix-icon.ico" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Zattix | Fashion Online Store</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+
+    <header class="main-header">
+      <nav class="navbar navbar-expand-md py-0 py-md-2">
+        <div class="nav-sm-container container px-0 px-md-2">
+          <a
+            class="navbar-brand f-size-12px text-white mx-md-2"
+            href="./index.html"
+            ><img
+              src="./assets/media/red-logo.png"
+              alt="zattix logo"
+              class="zattix-logo width-30px mr-2"
+            />ZATTIX</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars text-white"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav mr-auto">
+              <li class="nav-item active">
+                <a
+                  class="nav-link top-nav-a f-size-12px active mx-md-2"
+                  href="#"
+                  data-toggle="tab"
+                  ><i class="fas fa-home"></i> HOME</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link top-nav-a f-size-12px mx-md-2"
+                  href="#"
+                  data-toggle="tab"
+                  ><i class="fas fa-th-large"></i> COLLECTIONS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link top-nav-a f-size-12px mx-md-2"
+                  href="#"
+                  data-toggle="tab"
+                  ><i class="fas fa-shopping-cart"></i> PURCHASE LIST</a
+                >
+              </li>
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="btn btn-sm d-none d-md-inline-block text-white mx-md-2 f-size-12px"
+                >
+                  POST AN AD
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="d-none d-lg-block">
+            <i class="fas fa-envelope mr-2"></i>
+            <a href="#" class="f-size-12px text-white mr-2">Martin Najjar</a>
+            <div class="profile-pic-container d-inline-block mr-2">
+              <img
+                class="rounded-circle width-30px"
+                src="./assets/media/pro-pic.jpg"
+                alt="Martin Najjar"
+              />
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+
+    <main>
+      <!-- JUMBOTRON -->
+
+      <section
+        class="jumbotron jumbotron-fluid border-bottom pb-2 pb-md-5"
+        aria-label="search"
+      >
+        <div>
+          <h1 class="d-none d-md-block display-1 text-center text-white">
+            ZATTIX
+          </h1>
+          <p
+            class="jumbotron-paragraph d-none d-md-block text-center text-white"
+          >
+            Buying And Selling Couldn't be Simpler than this!
+          </p>
+        </div>
+        <div class="container justify-content-center d-flex mt-3">
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn dropdown-toggle dropdown-toggle-split py-0 mr-2 mr-md-0"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <input
+              type="search"
+              placeholder="All Departments"
+              class="d-none d-md-block p-2"
+            />
+            <div class="dropdown-menu">
+              <a class="dropdown-item text-uppercase" href="#armani"
+                >Emporio Armani</a
+              >
+              <a class="dropdown-item text-uppercase" href="#klein"
+                >Calvin Klein</a
+              >
+              <a class="dropdown-item text-uppercase" href="#gabbana"
+                >Dolce & Gabbana</a
+              >
+              <a class="dropdown-item text-uppercase" href="#vuitton"
+                >Louis Vuitton</a
+              >
+              <a class="dropdown-item text-uppercase" href="#levis">Levi's</a>
+              <a class="dropdown-item text-uppercase" href="#lauren"
+                >Ralph Lauren</a
+              >
+            </div>
+          </div>
+          <input
+            type="search"
+            placeholder="What do you search for?"
+            class="xs-input p-2"
+          />
+          <input
+            type="search"
+            placeholder="Where are you?"
+            class="d-none d-md-block p-2"
+          />
+          <a
+            href="./html-files/seachResults.html"
+            class="btn jumbotron-btn ml-2 rounded"
+            >Search</a
+          >
+        </div>
+      </section>
+
+      <!-- ADVERTISEMENTS -->
+
+      <section class="container d-none d-md-block position-relative">
+        <h3 class="ad-title my-3">HOT ADS</h3>
+        <div class="carousel-container">
+          <div class="carousel-slide w-100 d-flex">
+            <div class="w-100 col-md-12" id="lastClone">
+              <div class="w-100 row">
+                <div class="ad-img-div ad-img-div3 col-5"></div>
+                <div
+                  class="col-7 d-flex align-items-start flex-column justify-content-center"
+                >
+                  <h3>Mobile Phone</h3>
+                  <p>
+                    Samsung has released its newer mobile phone, which is
+                    incredibly fast, slim and smart. It has a cutting-edge
+                    design with 3 available colors -white, black, golden- and
+                    triple cameras which make you take a 4K, focused photos.
+                  </p>
+                  <p class="mt-3">
+                    By: <cite><a href="#">Yang Min Suo</a></cite>
+                  </p>
+                  <p>Location : Seoul</p>
+                  <div class="btn-container mt-3">
+                    <a href="#" class="btn ad-btn text-white">$ 450</a>
+                    <a href="#" class="btn ad-btn text-white"
+                      ><i class="fas fa-shopping-cart"></i> Purchase Details</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-100 col-md-12">
+              <div class="w-100 row">
+                <div class="ad-img-div ad-img-div1 col-5"></div>
+                <div
+                  class="col-7 d-flex align-items-start flex-column justify-content-center"
+                >
+                  <h3>Used IPhone Watch</h3>
+                  <p>
+                    Rafael Guerero is selling his 3-months-used watch with just
+                    $50. He's in Toronto, Canda. However he can ship it anywhere
+                    you are but the shipping expenses will be on your side.
+                  </p>
+                  <p class="mt-3">
+                    By: <cite><a href="#">Rafael Guerero</a></cite>
+                  </p>
+                  <p>Location : Toronto</p>
+                  <div class="btn-container mt-3">
+                    <a href="#" class="btn ad-btn text-white">$ 50</a>
+                    <a href="#" class="btn ad-btn text-white"
+                      ><i class="fas fa-shopping-cart"></i> Purchase Details</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-100 col-md-12">
+              <div class="w-100 row">
+                <div class="ad-img-div ad-img-div2 col-5"></div>
+                <div
+                  class="col-7 d-flex align-items-start flex-column justify-content-center"
+                >
+                  <h3>Macbook Pro</h3>
+                  <p>
+                    Nowadays, Macbooks are considered one of the best (if not
+                    the best) machine you would get. Apple has released the last
+                    version of their Macbook, which is called Macbook Pro, and
+                    Sergio Maldonado can offer you a good sale if you request
+                    one via their website.
+                  </p>
+                  <p class="mt-3">
+                    By: <cite><a href="#">Sergio Maldonado</a></cite>
+                  </p>
+                  <p>Location : Mexico City</p>
+                  <div class="btn-container mt-3">
+                    <a href="#" class="btn ad-btn text-white">$ 2150</a>
+                    <a href="#" class="btn ad-btn text-white"
+                      ><i class="fas fa-shopping-cart"></i> Purchase Details</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-100 col-md-12">
+              <div class="w-100 row">
+                <div class="ad-img-div ad-img-div3 col-5"></div>
+                <div
+                  class="col-7 d-flex align-items-start flex-column justify-content-center"
+                >
+                  <h3>Mobile Phone</h3>
+                  <p>
+                    Samsung has released its newer mobile phone, which is
+                    incredibly fast, slim and smart. It has a cutting-edge
+                    design with 3 available colors -white, black, golden- and
+                    triple cameras which make you take a 4K, focused photos.
+                  </p>
+                  <p class="mt-3">
+                    By: <cite><a href="#">Yang Min Suo</a></cite>
+                  </p>
+                  <p>Location : Seoul</p>
+                  <div class="btn-container mt-3">
+                    <a href="#" class="btn ad-btn text-white">$ 450</a>
+                    <a href="#" class="btn ad-btn text-white"
+                      ><i class="fas fa-shopping-cart"></i> Purchase Details</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-100 col-md-12" id="firstClone">
+              <div class="w-100 row">
+                <div class="ad-img-div ad-img-div1 col-5"></div>
+                <div
+                  class="col-7 d-flex align-items-start flex-column justify-content-center"
+                >
+                  <h3>Used IPhone Watch</h3>
+                  <p>
+                    Rafael Guerero is selling his 3-months-used watch with just
+                    $50. He's in Toronto, Canda. However he can ship it anywhere
+                    you are but the shipping expenses will be on your side.
+                  </p>
+                  <p class="mt-3">
+                    By: <cite><a href="#">Rafael Guerero</a></cite>
+                  </p>
+                  <p>Location : Toronto</p>
+                  <div class="btn-container mt-3">
+                    <a href="#" class="btn ad-btn text-white">$ 50</a>
+                    <a href="#" class="btn ad-btn text-white"
+                      ><i class="fas fa-shopping-cart"></i> Purchase Details</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="btn ad-carousel-btn left-btn position-absolute border"
+          type="button"
+          id="prevBtn"
+        >
+          <i class="fas fa-angle-left"></i>
+        </button>
+        <button
+          class="btn ad-carousel-btn right-btn position-absolute border"
+          type="button"
+          id="nextBtn"
+        >
+          <i class="fas fa-angle-right"></i>
+        </button>
+      </section>
+
+      <div class="container">
+        <!-- EMPORIO ARMANI -->
+
+        <section class="armani row mt-md-5" id="armani">
+          <div
+            class="col-12 col-md-12 spacer border-bottom d-flex mt-2 py-2 align-items-center"
+          >
+            <img
+              class="brands-logo mr-3"
+              src="./assets/media/Armani/armani-logo-square.png"
+              alt="armani logo"
+            />
+            <h3 class="spacer-title mr-1 mr-md-3">Emporio Armani</h3>
+            <p class="f-size-12px">
+              Explore the most cutting-edge Armani T-Shirts!!!
+            </p>
+          </div>
+          <div
+            id="armaniCarousel"
+            class="carousel slide w-100"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner w-100" role="listbox">
+              <!-- COLUNM-1/ARMANI -->
+              <div class="carousel-item active">
+                <div class="col-6 col-md-3">
+                  <div class="card mt-2">
+                    <img
+                      src="./assets/media/Armani/1.jpg"
+                      class="card-img-top img-fluid"
+                      alt="armani t-shirt"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">EMPORIO ARMANI</h5>
+                      <p class="card-text">
+                        <span class="d-block font-weight-bold color-red"
+                          >New</span
+                        >
+                        <span class="text-primary">Available</span>
+                      </p>
+                      <div
+                        class="plus-money-container d-flex justify-content-between mt-1"
+                      >
+                        <div class="btn-group dropup">
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i
+                              class="fas fa-plus text-secondary border p-2"
+                            ></i>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Add to Collection</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Send Message</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >More Details</a
+                            >
+                          </div>
+                        </div>
+                        <span class="color-red font-weight-bold">89$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- COLUNM-2/ARMANI -->
+              <div class="carousel-item">
+                <div class="col-6 col-md-3">
+                  <div class="card mt-2">
+                    <img
+                      src="./assets/media/Armani/2.jpg"
+                      class="card-img-top img-fluid"
+                      alt="armani t-shirt"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">EMPORIO ARMANI</h5>
+                      <p class="card-text">
+                        <span class="d-block font-weight-bold color-red"
+                          >New</span
+                        >
+                        <span class="text-primary">Available</span>
+                      </p>
+                      <div
+                        class="plus-money-container d-flex justify-content-between mt-1"
+                      >
+                        <div class="btn-group dropup">
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i
+                              class="fas fa-plus text-secondary border p-2"
+                            ></i>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Add to Collection</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Send Message</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >More Details</a
+                            >
+                          </div>
+                        </div>
+                        <span class="color-red font-weight-bold">120$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- COLUNM-3/ARMANI -->
+              <div class="carousel-item">
+                <div class="col-6 col-md-3">
+                  <div class="card mt-2">
+                    <img
+                      src="./assets/media/Armani/3.jpg"
+                      class="card-img-top img-fluid"
+                      alt="armani t-shirt"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">EMPORIO ARMANI</h5>
+                      <p class="card-text">
+                        <span class="d-block font-weight-bold color-red"
+                          >New</span
+                        >
+                        <span class="text-primary">Available</span>
+                      </p>
+                      <div
+                        class="plus-money-container d-flex justify-content-between mt-1"
+                      >
+                        <div class="btn-group dropup">
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i
+                              class="fas fa-plus text-secondary border p-2"
+                            ></i>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Add to Collection</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Send Message</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >More Details</a
+                            >
+                          </div>
+                        </div>
+                        <span class="color-red font-weight-bold">99$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- COLUNM-4/ARMANI -->
+              <div class="carousel-item">
+                <div class="col-6 col-md-3">
+                  <div class="card mt-2">
+                    <img
+                      src="./assets/media/Armani/4.jpg"
+                      class="card-img-top img-fluid"
+                      alt="armani t-shirt"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">EMPORIO ARMANI</h5>
+                      <p class="card-text">
+                        <span class="d-block font-weight-bold color-red"
+                          >New</span
+                        >
+                        <span class="text-primary">Available</span>
+                      </p>
+                      <div
+                        class="plus-money-container d-flex justify-content-between mt-1"
+                      >
+                        <div class="btn-group dropup">
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i
+                              class="fas fa-plus text-secondary border p-2"
+                            ></i>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Add to Collection</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Send Message</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >More Details</a
+                            >
+                          </div>
+                        </div>
+                        <span class="color-red font-weight-bold">85$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- COLUNM-5/ARMANI -->
+              <div class="carousel-item">
+                <div class="col-6 col-md-3">
+                  <div class="card mt-2">
+                    <img
+                      src="./assets/media/Armani/5.webp"
+                      class="card-img-top img-fluid"
+                      alt="armani t-shirt"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">EMPORIO ARMANI</h5>
+                      <p class="card-text">
+                        <span class="d-block font-weight-bold color-red"
+                          >New</span
+                        >
+                        <span class="text-primary">Available</span>
+                      </p>
+                      <div
+                        class="plus-money-container d-flex justify-content-between mt-1"
+                      >
+                        <div class="btn-group dropup">
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i
+                              class="fas fa-plus text-secondary border p-2"
+                            ></i>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Add to Collection</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Send Message</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >More Details</a
+                            >
+                          </div>
+                        </div>
+                        <span class="color-red font-weight-bold">90$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- COLUNM-6/ARMANI -->
+              <div class="carousel-item">
+                <div class="col-6 col-md-3">
+                  <div class="card mt-2">
+                    <img
+                      src="./assets/media/Armani/6.jpg"
+                      class="card-img-top img-fluid"
+                      alt="armani t-shirt"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">EMPORIO ARMANI</h5>
+                      <p class="card-text">
+                        <span class="d-block font-weight-bold color-red"
+                          >New</span
+                        >
+                        <span class="text-primary">Available</span>
+                      </p>
+                      <div
+                        class="plus-money-container d-flex justify-content-between mt-1"
+                      >
+                        <div class="btn-group dropup">
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i
+                              class="fas fa-plus text-secondary border p-2"
+                            ></i>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Add to Collection</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Send Message</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >More Details</a
+                            >
+                          </div>
+                        </div>
+                        <span class="color-red font-weight-bold">105$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- LEFT AND RIGHT BUTTONS -->
+
+            <a
+              class="carousel-control-prev w-auto heigh-100"
+              href="#armaniCarousel"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon bg-dark border border-dark"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next w-auto height-100"
+              href="#armaniCarousel"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon bg-dark border border-dark"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </section>
+
+        <!-- Calvin Klein -->
+
+        <section class="klein row mt-5" id="klein">
+          <div
+            class="col-12 col-md-12 spacer border-bottom d-flex mt-2 py-2 align-items-center"
+          >
+            <img
+              class="brands-logo mr-3"
+              src="./assets/media/klein/logo.png"
+              alt="kelin logo"
+            />
+            <h3 class="spacer-title mr-1 mr-md-3">Calvin Klein</h3>
+            <p class="f-size-12px">
+              Explore the most cutting-edge Klein T-Shirts!!!
+            </p>
+          </div>
+          <div
+            id="kleinCarousel"
+            class="carousel slide w-100"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner w-100" role="listbox">
+              <!-- COLUNM-1/KLEIN -->
+              <div class="carousel-item active">
+                <div class="col-6 col-md-3">
+                  <div class="card mt-2">
+                    <img
+                      src="./assets/media/klein/1.webp"
+                      class="card-img-top img-fluid"
+                      alt="klein t-shirt"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">Calvin Klein</h5>
+                      <p class="card-text">
+                        <span class="d-block font-weight-bold color-red"
+                          >New</span
+                        >
+                        <span class="text-primary">Available</span>
+                      </p>
+                      <div
+                        class="plus-money-container d-flex justify-content-between mt-1"
+                      >
+                        <div class="btn-group dropup">
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i
+                              class="fas fa-plus text-secondary border p-2"
+                            ></i>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Add to Collection</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Send Message</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >More Details</a
+                            >
+                          </div>
+                        </div>
+                        <span class="color-red font-weight-bold">89$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- COLUNM-2/KLEIN -->
+              <div class="carousel-item">
+                <div class="col-6 col-md-3">
+                  <div class="card mt-2">
+                    <img
+                      src="./assets/media/klein/2.jpg"
+                      class="card-img-top img-fluid"
+                      alt="klein t-shirt"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">Calvin Klein</h5>
+                      <p class="card-text">
+                        <span class="d-block font-weight-bold color-red"
+                          >New</span
+                        >
+                        <span class="text-primary">Available</span>
+                      </p>
+                      <div
+                        class="plus-money-container d-flex justify-content-between mt-1"
+                      >
+                        <div class="btn-group dropup">
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i
+                              class="fas fa-plus text-secondary border p-2"
+                            ></i>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Add to Collection</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Send Message</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >More Details</a
+                            >
+                          </div>
+                        </div>
+                        <span class="color-red font-weight-bold">120$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- COLUNM-3/KLEIN -->
+              <div class="carousel-item">
+                <div class="col-6 col-md-3">
+                  <div class="card mt-2">
+                    <img
+                      src="./assets/media/klein/3.jpg"
+                      class="card-img-top img-fluid"
+                      alt="klein t-shirt"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">Calvin Klein</h5>
+                      <p class="card-text">
+                        <span class="d-block font-weight-bold color-red"
+                          >New</span
+                        >
+                        <span class="text-primary">Available</span>
+                      </p>
+                      <div
+                        class="plus-money-container d-flex justify-content-between mt-1"
+                      >
+                        <div class="btn-group dropup">
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i
+                              class="fas fa-plus text-secondary border p-2"
+                            ></i>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Add to Collection</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Send Message</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >More Details</a
+                            >
+                          </div>
+                        </div>
+                        <span class="color-red font-weight-bold">99$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- COLUNM-4/KLEIN -->
+              <div class="carousel-item">
+                <div class="col-6 col-md-3">
+                  <div class="card mt-2">
+                    <img
+                      src="./assets/media/klein/4.webp"
+                      class="card-img-top img-fluid"
+                      alt="klein t-shirt"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">Calvin Klein</h5>
+                      <p class="card-text">
+                        <span class="d-block font-weight-bold color-red"
+                          >New</span
+                        >
+                        <span class="text-primary">Available</span>
+                      </p>
+                      <div
+                        class="plus-money-container d-flex justify-content-between mt-1"
+                      >
+                        <div class="btn-group dropup">
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i
+                              class="fas fa-plus text-secondary border p-2"
+                            ></i>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Add to Collection</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Send Message</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >More Details</a
+                            >
+                          </div>
+                        </div>
+                        <span class="color-red font-weight-bold">85$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- COLUNM-5/KLEIN -->
+              <div class="carousel-item">
+                <div class="col-6 col-md-3">
+                  <div class="card mt-2">
+                    <img
+                      src="./assets/media/klein/5.jpg"
+                      class="card-img-top img-fluid"
+                      alt="klein t-shirt"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">Calvin Klein</h5>
+                      <p class="card-text">
+                        <span class="d-block font-weight-bold color-red"
+                          >New</span
+                        >
+                        <span class="text-primary">Available</span>
+                      </p>
+                      <div
+                        class="plus-money-container d-flex justify-content-between mt-1"
+                      >
+                        <div class="btn-group dropup">
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i
+                              class="fas fa-plus text-secondary border p-2"
+                            ></i>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Add to Collection</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Send Message</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >More Details</a
+                            >
+                          </div>
+                        </div>
+                        <span class="color-red font-weight-bold">90$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- COLUNM-6/KLEIN -->
+              <div class="carousel-item">
+                <div class="col-6 col-md-3">
+                  <div class="card mt-2">
+                    <img
+                      src="./assets/media/klein/6.jpg"
+                      class="card-img-top img-fluid"
+                      alt="klein t-shirt"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">Calvin Kelin</h5>
+                      <p class="card-text">
+                        <span class="d-block font-weight-bold color-red"
+                          >New</span
+                        >
+                        <span class="text-primary">Available</span>
+                      </p>
+                      <div
+                        class="plus-money-container d-flex justify-content-between mt-1"
+                      >
+                        <div class="btn-group dropup">
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i
+                              class="fas fa-plus text-secondary border p-2"
+                            ></i>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Add to Collection</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Send Message</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >More Details</a
+                            >
+                          </div>
+                        </div>
+                        <span class="color-red font-weight-bold">105$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- LEFT AND RIGHT BUTTONS -->
+
+            <a
+              class="carousel-control-prev w-auto heigh-100"
+              href="#kleinCarousel"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon bg-dark border border-dark"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next w-auto height-100"
+              href="#kleinCarousel"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon bg-dark border border-dark"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </section>
+
+        <!-- DOLCE & GABBANA -->
+
+        <section class="gabbana row mt-5" id="gabbana">
+          <div
+            class="col-12 col-md-12 spacer border-bottom d-flex mt-2 py-2 align-items-center"
+          >
+            <!-- <i class="fas fa-tshirt mr-3"></i> -->
+            <img
+              class="brands-logo mr-3"
+              src="./assets/media/gabbana/logo.jpg"
+              alt="armani logo"
+            />
+            <h3 class="spacer-title mr-1 mr-md-3">DOLCE & GABBANA</h3>
+            <p class="f-size-12px">
+              Explore the most cutting-edge Dolce & Gabbana T-Shirts!!!
+            </p>
+          </div>
+          <div
+            id="gabbanaCarousel"
+            class="carousel slide w-100"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner w-100" role="listbox">
+              <!-- COLUNM-1/GABBANA -->
+              <div class="carousel-item active">
+                <div class="col-6 col-md-3">
+                  <div class="card mt-2">
+                    <img
+                      src="./assets/media/gabbana/1.jpg"
+                      class="card-img-top img-fluid"
+                      alt="gabbana t-shirt"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">DOLCE & GABBANA</h5>
+                      <p class="card-text">
+                        <span class="d-block font-weight-bold color-red"
+                          >New</span
+                        >
+                        <span class="text-primary">Available</span>
+                      </p>
+                      <div
+                        class="plus-money-container d-flex justify-content-between mt-1"
+                      >
+                        <div class="btn-group dropup">
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i
+                              class="fas fa-plus text-secondary border p-2"
+                            ></i>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Add to Collection</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Send Message</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >More Details</a
+                            >
+                          </div>
+                        </div>
+                        <span class="color-red font-weight-bold">89$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- COLUNM-2/GABBANA -->
+              <div class="carousel-item">
+                <div class="col-6 col-md-3">
+                  <div class="card mt-2">
+                    <img
+                      src="./assets/media/gabbana/2.jpg"
+                      class="card-img-top img-fluid"
+                      alt="gabbana t-shirt"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">Dolce & Gabbana</h5>
+                      <p class="card-text">
+                        <span class="d-block font-weight-bold color-red"
+                          >New</span
+                        >
+                        <span class="text-primary">Available</span>
+                      </p>
+                      <div
+                        class="plus-money-container d-flex justify-content-between mt-1"
+                      >
+                        <div class="btn-group dropup">
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i
+                              class="fas fa-plus text-secondary border p-2"
+                            ></i>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Add to Collection</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Send Message</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >More Details</a
+                            >
+                          </div>
+                        </div>
+                        <span class="color-red font-weight-bold">120$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- COLUNM-3/GABBANA -->
+              <div class="carousel-item">
+                <div class="col-6 col-md-3">
+                  <div class="card mt-2">
+                    <img
+                      src="./assets/media/gabbana/3.jpg"
+                      class="card-img-top img-fluid"
+                      alt="gabbana t-shirt"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">dolce & gabbana</h5>
+                      <p class="card-text">
+                        <span class="d-block font-weight-bold color-red"
+                          >New</span
+                        >
+                        <span class="text-primary">Available</span>
+                      </p>
+                      <div
+                        class="plus-money-container d-flex justify-content-between mt-1"
+                      >
+                        <div class="btn-group dropup">
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i
+                              class="fas fa-plus text-secondary border p-2"
+                            ></i>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Add to Collection</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Send Message</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >More Details</a
+                            >
+                          </div>
+                        </div>
+                        <span class="color-red font-weight-bold">99$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- COLUNM-4/GABBANA -->
+              <div class="carousel-item">
+                <div class="col-6 col-md-3">
+                  <div class="card mt-2">
+                    <img
+                      src="./assets/media/gabbana/4.jpg"
+                      class="card-img-top img-fluid"
+                      alt="gabbana t-shirt"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">dolce & gabbana</h5>
+                      <p class="card-text">
+                        <span class="d-block font-weight-bold color-red"
+                          >New</span
+                        >
+                        <span class="text-primary">Available</span>
+                      </p>
+                      <div
+                        class="plus-money-container d-flex justify-content-between mt-1"
+                      >
+                        <div class="btn-group dropup">
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i
+                              class="fas fa-plus text-secondary border p-2"
+                            ></i>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Add to Collection</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Send Message</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >More Details</a
+                            >
+                          </div>
+                        </div>
+                        <span class="color-red font-weight-bold">85$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- COLUNM-5/GABBANA -->
+              <div class="carousel-item">
+                <div class="col-6 col-md-3">
+                  <div class="card mt-2">
+                    <img
+                      src="./assets/media/gabbana/5.jpg"
+                      class="card-img-top img-fluid"
+                      alt="gabbana t-shirt"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">dolce & gabbana</h5>
+                      <p class="card-text">
+                        <span class="d-block font-weight-bold color-red"
+                          >New</span
+                        >
+                        <span class="text-primary">Available</span>
+                      </p>
+                      <div
+                        class="plus-money-container d-flex justify-content-between mt-1"
+                      >
+                        <div class="btn-group dropup">
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i
+                              class="fas fa-plus text-secondary border p-2"
+                            ></i>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Add to Collection</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Send Message</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >More Details</a
+                            >
+                          </div>
+                        </div>
+                        <span class="color-red font-weight-bold">90$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- COLUNM-6/GABBANA -->
+              <div class="carousel-item">
+                <div class="col-6 col-md-3">
+                  <div class="card mt-2">
+                    <img
+                      src="./assets/media/gabbana/6.jpg"
+                      class="card-img-top img-fluid"
+                      alt="gabbana t-shirt"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">dolce & gabbana</h5>
+                      <p class="card-text">
+                        <span class="d-block font-weight-bold color-red"
+                          >New</span
+                        >
+                        <span class="text-primary">Available</span>
+                      </p>
+                      <div
+                        class="plus-money-container d-flex justify-content-between mt-1"
+                      >
+                        <div class="btn-group dropup">
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i
+                              class="fas fa-plus text-secondary border p-2"
+                            ></i>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Add to Collection</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Send Message</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >More Details</a
+                            >
+                          </div>
+                        </div>
+                        <span class="color-red font-weight-bold">105$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- LEFT AND RIGHT BUTTONS -->
+
+            <a
+              class="carousel-control-prev w-auto heigh-100"
+              href="#gabbanaCarousel"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon bg-dark border border-dark"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next w-auto height-100"
+              href="#gabbanaCarousel"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon bg-dark border border-dark"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </section>
+
+        <!-- LOUIS VUITTON -->
+
+        <section class="vuitton row mt-5" id="vuitton">
+          <div
+            class="col-12 col-md-12 spacer border-bottom d-flex mt-2 py-2 align-items-center"
+          >
+            <img
+              class="brands-logo mr-3"
+              src="./assets/media/vuitton/logo.jpg"
+              alt="vuitton logo"
+            />
+            <h3 class="spacer-title mr-1 mr-md-3">LOUIS VUITTON</h3>
+            <p class="f-size-12px">
+              Explore the most cutting-edge Vuitton T-Shirts!!!
+            </p>
+          </div>
+          <div
+            id="vuittonCarousel"
+            class="carousel slide w-100"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner w-100" role="listbox">
+              <!-- COLUNM-1/VUITTON -->
+              <div class="carousel-item active">
+                <div class="col-6 col-md-3">
+                  <div class="card mt-2">
+                    <img
+                      src="./assets/media/vuitton/1.jpg"
+                      class="card-img-top img-fluid"
+                      alt="vuitton t-shirt"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">louis vuitton</h5>
+                      <p class="card-text">
+                        <span class="d-block font-weight-bold color-red"
+                          >New</span
+                        >
+                        <span class="text-primary">Available</span>
+                      </p>
+                      <div
+                        class="plus-money-container d-flex justify-content-between mt-1"
+                      >
+                        <div class="btn-group dropup">
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i
+                              class="fas fa-plus text-secondary border p-2"
+                            ></i>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Add to Collection</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Send Message</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >More Details</a
+                            >
+                          </div>
+                        </div>
+                        <span class="color-red font-weight-bold">89$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- COLUNM-2/VUITTON -->
+              <div class="carousel-item">
+                <div class="col-6 col-md-3">
+                  <div class="card mt-2">
+                    <img
+                      src="./assets/media/vuitton/2.jpg"
+                      class="card-img-top img-fluid"
+                      alt="vuitton t-shirt"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">louis vuitton</h5>
+                      <p class="card-text">
+                        <span class="d-block font-weight-bold color-red"
+                          >New</span
+                        >
+                        <span class="text-primary">Available</span>
+                      </p>
+                      <div
+                        class="plus-money-container d-flex justify-content-between mt-1"
+                      >
+                        <div class="btn-group dropup">
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i
+                              class="fas fa-plus text-secondary border p-2"
+                            ></i>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Add to Collection</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Send Message</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >More Details</a
+                            >
+                          </div>
+                        </div>
+                        <span class="color-red font-weight-bold">120$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- COLUNM-3/VUITTON -->
+              <div class="carousel-item">
+                <div class="col-6 col-md-3">
+                  <div class="card mt-2">
+                    <img
+                      src="./assets/media/vuitton/3.jpg"
+                      class="card-img-top img-fluid"
+                      alt="vuitton t-shirt"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">LOUIS VUITTON</h5>
+                      <p class="card-text">
+                        <span class="d-block font-weight-bold color-red"
+                          >New</span
+                        >
+                        <span class="text-primary">Available</span>
+                      </p>
+                      <div
+                        class="plus-money-container d-flex justify-content-between mt-1"
+                      >
+                        <div class="btn-group dropup">
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i
+                              class="fas fa-plus text-secondary border p-2"
+                            ></i>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Add to Collection</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Send Message</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >More Details</a
+                            >
+                          </div>
+                        </div>
+                        <span class="color-red font-weight-bold">99$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- COLUNM-4/VUITTON -->
+              <div class="carousel-item">
+                <div class="col-6 col-md-3">
+                  <div class="card mt-2">
+                    <img
+                      src="./assets/media/vuitton/4.jpg"
+                      class="card-img-top img-fluid"
+                      alt="vuitton t-shirt"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">LOUIS VUITTON</h5>
+                      <p class="card-text">
+                        <span class="d-block font-weight-bold color-red"
+                          >New</span
+                        >
+                        <span class="text-primary">Available</span>
+                      </p>
+                      <div
+                        class="plus-money-container d-flex justify-content-between mt-1"
+                      >
+                        <div class="btn-group dropup">
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i
+                              class="fas fa-plus text-secondary border p-2"
+                            ></i>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Add to Collection</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Send Message</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >More Details</a
+                            >
+                          </div>
+                        </div>
+                        <span class="color-red font-weight-bold">85$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- COLUNM-5/VUITTON -->
+              <div class="carousel-item">
+                <div class="col-6 col-md-3">
+                  <div class="card mt-2">
+                    <img
+                      src="./assets/media/vuitton/5.jpg"
+                      class="card-img-top img-fluid"
+                      alt="vuitton t-shirt"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">louis vuitton</h5>
+                      <p class="card-text">
+                        <span class="d-block font-weight-bold color-red"
+                          >New</span
+                        >
+                        <span class="text-primary">Available</span>
+                      </p>
+                      <div
+                        class="plus-money-container d-flex justify-content-between mt-1"
+                      >
+                        <div class="btn-group dropup">
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i
+                              class="fas fa-plus text-secondary border p-2"
+                            ></i>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Add to Collection</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Send Message</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >More Details</a
+                            >
+                          </div>
+                        </div>
+                        <span class="color-red font-weight-bold">90$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- COLUNM-6/vuitton -->
+              <div class="carousel-item">
+                <div class="col-6 col-md-3">
+                  <div class="card mt-2">
+                    <img
+                      src="./assets/media/vuitton/6.jpg"
+                      class="card-img-top img-fluid"
+                      alt="vuitton t-shirt"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">louis vuitton</h5>
+                      <p class="card-text">
+                        <span class="d-block font-weight-bold color-red"
+                          >New</span
+                        >
+                        <span class="text-primary">Available</span>
+                      </p>
+                      <div
+                        class="plus-money-container d-flex justify-content-between mt-1"
+                      >
+                        <div class="btn-group dropup">
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i
+                              class="fas fa-plus text-secondary border p-2"
+                            ></i>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Add to Collection</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Send Message</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >More Details</a
+                            >
+                          </div>
+                        </div>
+                        <span class="color-red font-weight-bold">105$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- LEFT AND RIGHT BUTTONS -->
+
+            <a
+              class="carousel-control-prev w-auto heigh-100"
+              href="#vuittonCarousel"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon bg-dark border border-dark"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next w-auto height-100"
+              href="#vuittonCarousel"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon bg-dark border border-dark"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </section>
+
+        <!-- LEVI'S -->
+
+        <section class="levis row mt-5" id="levis">
+          <div
+            class="col-12 col-md-12 spacer border-bottom d-flex mt-2 py-2 align-items-center"
+          >
+            <img
+              class="brands-logo mr-3"
+              src="./assets/media/levis/logo.png"
+              alt="levi's logo"
+            />
+            <h3 class="spacer-title mr-1 mr-md-3">LEVI'S</h3>
+            <p class="f-size-12px">
+              Explore the most cutting-edge Levi's T-Shirts!!!
+            </p>
+          </div>
+          <div
+            id="levisCarousel"
+            class="carousel slide w-100"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner w-100" role="listbox">
+              <!-- COLUNM-1/LEVI'S -->
+              <div class="carousel-item active">
+                <div class="col-6 col-md-3">
+                  <div class="card mt-2">
+                    <img
+                      src="./assets/media/levis/1.jpg"
+                      class="card-img-top img-fluid"
+                      alt="levi's t-shirt"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">Levi's</h5>
+                      <p class="card-text">
+                        <span class="d-block font-weight-bold color-red"
+                          >New</span
+                        >
+                        <span class="text-primary">Available</span>
+                      </p>
+                      <div
+                        class="plus-money-container d-flex justify-content-between mt-1"
+                      >
+                        <div class="btn-group dropup">
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i
+                              class="fas fa-plus text-secondary border p-2"
+                            ></i>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Add to Collection</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Send Message</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >More Details</a
+                            >
+                          </div>
+                        </div>
+                        <span class="color-red font-weight-bold">89$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- COLUNM-2/LEVI'S -->
+              <div class="carousel-item">
+                <div class="col-6 col-md-3">
+                  <div class="card mt-2">
+                    <img
+                      src="./assets/media/levis/2.jpg"
+                      class="card-img-top img-fluid"
+                      alt="levi's t-shirt"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">Levi's</h5>
+                      <p class="card-text">
+                        <span class="d-block font-weight-bold color-red"
+                          >New</span
+                        >
+                        <span class="text-primary">Available</span>
+                      </p>
+                      <div
+                        class="plus-money-container d-flex justify-content-between mt-1"
+                      >
+                        <div class="btn-group dropup">
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i
+                              class="fas fa-plus text-secondary border p-2"
+                            ></i>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Add to Collection</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Send Message</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >More Details</a
+                            >
+                          </div>
+                        </div>
+                        <span class="color-red font-weight-bold">120$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- COLUNM-3/LEVI'S -->
+              <div class="carousel-item">
+                <div class="col-6 col-md-3">
+                  <div class="card mt-2">
+                    <img
+                      src="./assets/media/levis/3.jpg"
+                      class="card-img-top img-fluid"
+                      alt="levi's t-shirt"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">levi's</h5>
+                      <p class="card-text">
+                        <span class="d-block font-weight-bold color-red"
+                          >New</span
+                        >
+                        <span class="text-primary">Available</span>
+                      </p>
+                      <div
+                        class="plus-money-container d-flex justify-content-between mt-1"
+                      >
+                        <div class="btn-group dropup">
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i
+                              class="fas fa-plus text-secondary border p-2"
+                            ></i>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Add to Collection</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Send Message</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >More Details</a
+                            >
+                          </div>
+                        </div>
+                        <span class="color-red font-weight-bold">99$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- COLUNM-4/LEVI'S -->
+              <div class="carousel-item">
+                <div class="col-6 col-md-3">
+                  <div class="card mt-2">
+                    <img
+                      src="./assets/media/levis/4.jpg"
+                      class="card-img-top img-fluid"
+                      alt="levi's t-shirt"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">Levi's</h5>
+                      <p class="card-text">
+                        <span class="d-block font-weight-bold color-red"
+                          >New</span
+                        >
+                        <span class="text-primary">Available</span>
+                      </p>
+                      <div
+                        class="plus-money-container d-flex justify-content-between mt-1"
+                      >
+                        <div class="btn-group dropup">
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i
+                              class="fas fa-plus text-secondary border p-2"
+                            ></i>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Add to Collection</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Send Message</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >More Details</a
+                            >
+                          </div>
+                        </div>
+                        <span class="color-red font-weight-bold">85$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- COLUNM-5/LEVI'S -->
+              <div class="carousel-item">
+                <div class="col-6 col-md-3">
+                  <div class="card mt-2">
+                    <img
+                      src="./assets/media/levis/5.jpg"
+                      class="card-img-top img-fluid"
+                      alt="levi's t-shirt"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">levi's</h5>
+                      <p class="card-text">
+                        <span class="d-block font-weight-bold color-red"
+                          >New</span
+                        >
+                        <span class="text-primary">Available</span>
+                      </p>
+                      <div
+                        class="plus-money-container d-flex justify-content-between mt-1"
+                      >
+                        <div class="btn-group dropup">
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i
+                              class="fas fa-plus text-secondary border p-2"
+                            ></i>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Add to Collection</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Send Message</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >More Details</a
+                            >
+                          </div>
+                        </div>
+                        <span class="color-red font-weight-bold">90$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- COLUNM-6/LEVI'S -->
+              <div class="carousel-item">
+                <div class="col-6 col-md-3">
+                  <div class="card mt-2">
+                    <img
+                      src="./assets/media/levis/6.jpg"
+                      class="card-img-top img-fluid"
+                      alt="levi's t-shirt"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">Levi's</h5>
+                      <p class="card-text">
+                        <span class="d-block font-weight-bold color-red"
+                          >New</span
+                        >
+                        <span class="text-primary">Available</span>
+                      </p>
+                      <div
+                        class="plus-money-container d-flex justify-content-between mt-1"
+                      >
+                        <div class="btn-group dropup">
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i
+                              class="fas fa-plus text-secondary border p-2"
+                            ></i>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Add to Collection</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Send Message</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >More Details</a
+                            >
+                          </div>
+                        </div>
+                        <span class="color-red font-weight-bold">105$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- LEFT AND RIGHT BUTTONS -->
+
+            <a
+              class="carousel-control-prev w-auto heigh-100"
+              href="#levisCarousel"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon bg-dark border border-dark"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next w-auto height-100"
+              href="#levisCarousel"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon bg-dark border border-dark"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </section>
+
+        <!-- Ralph Lauren -->
+
+        <section class="lauren row mt-5" id="lauren">
+          <div
+            class="col-12 col-md-12 spacer border-bottom d-flex mt-2 py-2 align-items-center"
+          >
+            <img
+              class="brands-logo mr-3"
+              src="./assets/media/lauren/logo.png"
+              alt="lauren logo"
+            />
+            <h3 class="spacer-title mr-1 mr-md-3">Ralph Lauren</h3>
+            <p class="f-size-12px">
+              Explore the most cutting-edge Lauren T-Shirts!!!
+            </p>
+          </div>
+          <div
+            id="laurenCarousel"
+            class="carousel slide w-100"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner w-100" role="listbox">
+              <!-- COLUNM-1/LAUREN -->
+              <div class="carousel-item active">
+                <div class="col-6 col-md-3">
+                  <div class="card mt-2">
+                    <img
+                      src="./assets/media/lauren/1.webp"
+                      class="card-img-top img-fluid"
+                      alt="lauren t-shirt"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">ralph lauren</h5>
+                      <p class="card-text">
+                        <span class="d-block font-weight-bold color-red"
+                          >New</span
+                        >
+                        <span class="text-primary">Available</span>
+                      </p>
+                      <div
+                        class="plus-money-container d-flex justify-content-between mt-1"
+                      >
+                        <div class="btn-group dropup">
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i
+                              class="fas fa-plus text-secondary border p-2"
+                            ></i>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Add to Collection</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Send Message</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >More Details</a
+                            >
+                          </div>
+                        </div>
+                        <span class="color-red font-weight-bold">89$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- COLUNM-2/LAUREN -->
+              <div class="carousel-item">
+                <div class="col-6 col-md-3">
+                  <div class="card mt-2">
+                    <img
+                      src="./assets/media/lauren/2.jpg"
+                      class="card-img-top img-fluid"
+                      alt="lauren t-shirt"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">Ralph lauren</h5>
+                      <p class="card-text">
+                        <span class="d-block font-weight-bold color-red"
+                          >New</span
+                        >
+                        <span class="text-primary">Available</span>
+                      </p>
+                      <div
+                        class="plus-money-container d-flex justify-content-between mt-1"
+                      >
+                        <div class="btn-group dropup">
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i
+                              class="fas fa-plus text-secondary border p-2"
+                            ></i>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Add to Collection</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Send Message</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >More Details</a
+                            >
+                          </div>
+                        </div>
+                        <span class="color-red font-weight-bold">120$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- COLUNM-3/LAUREN -->
+              <div class="carousel-item">
+                <div class="col-6 col-md-3">
+                  <div class="card mt-2">
+                    <img
+                      src="./assets/media/lauren/3.jpg"
+                      class="card-img-top img-fluid"
+                      alt="lauren t-shirt"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">Ralph lauren</h5>
+                      <p class="card-text">
+                        <span class="d-block font-weight-bold color-red"
+                          >New</span
+                        >
+                        <span class="text-primary">Available</span>
+                      </p>
+                      <div
+                        class="plus-money-container d-flex justify-content-between mt-1"
+                      >
+                        <div class="btn-group dropup">
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i
+                              class="fas fa-plus text-secondary border p-2"
+                            ></i>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Add to Collection</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Send Message</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >More Details</a
+                            >
+                          </div>
+                        </div>
+                        <span class="color-red font-weight-bold">99$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- COLUNM-4/LAUREN -->
+              <div class="carousel-item">
+                <div class="col-6 col-md-3">
+                  <div class="card mt-2">
+                    <img
+                      src="./assets/media/lauren/4.jpg"
+                      class="card-img-top img-fluid"
+                      alt="lauren t-shirt"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">ralph lauren</h5>
+                      <p class="card-text">
+                        <span class="d-block font-weight-bold color-red"
+                          >New</span
+                        >
+                        <span class="text-primary">Available</span>
+                      </p>
+                      <div
+                        class="plus-money-container d-flex justify-content-between mt-1"
+                      >
+                        <div class="btn-group dropup">
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i
+                              class="fas fa-plus text-secondary border p-2"
+                            ></i>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Add to Collection</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Send Message</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >More Details</a
+                            >
+                          </div>
+                        </div>
+                        <span class="color-red font-weight-bold">85$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- COLUNM-5/LAUREN -->
+              <div class="carousel-item">
+                <div class="col-6 col-md-3">
+                  <div class="card mt-2">
+                    <img
+                      src="./assets/media/lauren/5.jpg"
+                      class="card-img-top img-fluid"
+                      alt="lauren t-shirt"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">ralph lauren</h5>
+                      <p class="card-text">
+                        <span class="d-block font-weight-bold color-red"
+                          >New</span
+                        >
+                        <span class="text-primary">Available</span>
+                      </p>
+                      <div
+                        class="plus-money-container d-flex justify-content-between mt-1"
+                      >
+                        <div class="btn-group dropup">
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i
+                              class="fas fa-plus text-secondary border p-2"
+                            ></i>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Add to Collection</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Send Message</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >More Details</a
+                            >
+                          </div>
+                        </div>
+                        <span class="color-red font-weight-bold">90$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- COLUNM-6/LAUREN -->
+              <div class="carousel-item">
+                <div class="col-6 col-md-3">
+                  <div class="card mt-2">
+                    <img
+                      src="./assets/media/lauren/6.jpg"
+                      class="card-img-top img-fluid"
+                      alt="lauren t-shirt"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">ralph lauren</h5>
+                      <p class="card-text">
+                        <span class="d-block font-weight-bold color-red"
+                          >New</span
+                        >
+                        <span class="text-primary">Available</span>
+                      </p>
+                      <div
+                        class="plus-money-container d-flex justify-content-between mt-1"
+                      >
+                        <div class="btn-group dropup">
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle-split pl-0 py-0 mr-2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i
+                              class="fas fa-plus text-secondary border p-2"
+                            ></i>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Add to Collection</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >Send Message</a
+                            >
+                            <a class="dropdown-item text-uppercase" href="#"
+                              >More Details</a
+                            >
+                          </div>
+                        </div>
+                        <span class="color-red font-weight-bold">105$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- LEFT AND RIGHT BUTTONS -->
+
+            <a
+              class="carousel-control-prev w-auto heigh-100"
+              href="#laurenCarousel"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon bg-dark border border-dark"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next w-auto height-100"
+              href="#laurenCarousel"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon bg-dark border border-dark"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="m-0 p-0">
+      <div
+        class="container row row-cols-1 row-cols-md-3 d-flex justify-content-between flex-xs-column flex-md-row pt-3 mx-auto"
+      >
+        <div class="about d-none d-md-block">
+          <a class="footer-title font-weight-bold navbar-brand mx-md-2" href="#"
+            ><img
+              src="./assets/media/grey-logo.png"
+              alt="zattix logo"
+              class="zattix-logo width-30px mr-2"
+            />ZATTIX</a
+          >
+          <p class="footer-paragraph">
+            Zattix is a fashion store website. It has daily sales and offers on
+            the most T-Shirts' brands, plus it will ship you the product no
+            matter where you live.
+          </p>
+        </div>
+        <nav
+          class="nav footer-nav flex-xs-row flex-md-column justify-content-md-center align-items-md-center"
+        >
+          <h3 class="bottom-navigation-title py-2 pr-3">Navigation</h3>
+          <div
+            class="bottom-nav-links d-flex flex-xs-row flex-md-column justify-content-between flex-wrap"
+          >
+            <a class="nav-link bottom-nav-a" href="#">Home</a>
+            <a class="nav-link bottom-nav-a" href="#">Sign In</a>
+            <a class="nav-link bottom-nav-a" href="#">Sign Up</a>
+            <a class="nav-link bottom-nav-a" href="#">Terms & Conditions</a>
+            <a class="nav-link bottom-nav-a" href="#">FAQ</a>
+            <a class="nav-link bottom-nav-a" href="#">Help</a>
+          </div>
+        </nav>
+        <div class="properties d-flex flex-md-column flex-wrap align-items-end">
+          <div class="country-div mt-3 mr-3">
+            <h3 class="text-uppercase d-inline-block mr-2">Country</h3>
+            <button type="button" class="btn border">Iraq</button>
+          </div>
+          <div class="language-div mt-3 mr-3">
+            <h3 class="text-uppercase d-inline-block mr-2">Language</h3>
+            <button type="button" class="btn border mr-2">English</button>
+          </div>
+          <div class="currency-div mt-3 mr-3">
+            <h3 class="text-uppercase d-inline-block">Currency</h3>
+            <button type="button" class="btn border">US Dollar</button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="copyright-div container d-flex flex-column flex-md-row-reverse justify-content-between border-top mt-3 pt-3 p-md-3"
+      >
+        <div class="social-media-icons">
+          <ul class="d-flex justify-content-around">
+            <li>
+              <a href="#" class="social-media-links"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="social-media-links"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="social-media-links"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <p class="text-center f-size-12px">
+          &copy; 2020 All Rights Reserved. Designed by
+          <a
+            href="https://www.behance.net/gallery/24796463/ZATTIX"
+            target="_blank"
+            rel="noopener"
+            >Mohammed Awad</a
+          >. Implemented by
+          <a
+            href="https://www.linkedin.com/in/martinnajjar12/"
+            target="_blank"
+            rel="noopener"
+            >Martin Najjar</a
+          >
+        </p>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/javascript/script.js"></script>
+  </body>
+</html>
