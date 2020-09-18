@@ -11,8 +11,15 @@
 - HTML5
 - CSS3
 - Bootstrap
-- Multi-item Bootstrap Carousel
 - Javascript
+
+## Features
+
+- Multi-item Bootstrap Carousel
+- Simple Javascript Carousel
+- Dropdown menus
+- 2 pages site (Click the search button in order to take you to the other page)
+- Fully responsive
 
 ## Live Demo
 
